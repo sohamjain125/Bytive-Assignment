@@ -14,20 +14,26 @@ This project is a simple Task Management API built with Node.js, Express, and Mo
 ## Installation
 
 1. **Clone the Repository:**
-   bash
-   git clone https://github.com/Taranveersingh1/bytiv.assignment.git
+
+   ```bash
+   git clone https://github.com/sohamjain125/Bytive-Assignment
+   ```
 
 2. **Install Dependencies:**
-   bash
+
+   ```bash
    npm install
+   ```
 
 3. **Set up MongoDB:**
 
    - Ensure MongoDB is running locally or update the connection string in `index.js`.
 
 4. **Start the Server:**
-   bash
+
+   ```bash
    npm start
+   ```
 
    The server will start on `http://localhost:8000`.
 
@@ -65,35 +71,44 @@ This project is a simple Task Management API built with Node.js, Express, and Mo
 ## Example Usage
 
 1. Start the server:
+
    ```bash
    npm start
    ```
 
-2.Example Usage with Postman
+2. Example Usage with Postman
 
-Create a Task:
-Method: POST
-URL: http://localhost:8000/tasks
-Body (JSON):
-{ "title": "Example Task", "description": "An example task." }
+   - **Create a Task:**
 
-Get All Tasks:
-Method: GET
-URL: http://localhost:8000/tasks
+     - Method: POST
+     - URL: `http://localhost:8000/tasks`
+     - Body (JSON):
+       ```json
+       { "title": "Example Task", "description": "An example task." }
+       ```
 
-Get Task by ID:
-Method: GET
-URL: http://localhost:8000/tasks/<task-id>
+   - **Get All Tasks:**
 
-Update Task Status:
-Method: PUT
-URL: http://localhost:8000/tasks/<task-id>
-Body (JSON):
-{ "status": "completed" }
+     - Method: GET
+     - URL: `http://localhost:8000/tasks`
 
-Delete a Task:
-Method: DELETE
-URL: http://localhost:8000/tasks/<task-id>
+   - **Get Task by ID:**
+
+     - Method: GET
+     - URL: `http://localhost:8000/tasks/<task-id>`
+
+   - **Update Task Status:**
+
+     - Method: PUT
+     - URL: `http://localhost:8000/tasks/<task-id>`
+     - Body (JSON):
+       ```json
+       { "status": "completed" }
+       ```
+
+   - **Delete a Task:**
+     - Method: DELETE
+     - URL: `http://localhost:8000/tasks/<task-id>`
 
 ## Notes
 
